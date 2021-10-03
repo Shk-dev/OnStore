@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 16px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  background: #e8e8e8;
+}
+
+strong {
+  color: teal;
+}
+
+img {
+  width: 10em;
+}
+
+.active {
+  display: block;
+}
+
+.header {
+  text-align: center;
+  background: black;
+}
+
+.header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #333;
+  padding: 0px 200px;
+}
+
+.nav__link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 25px 35px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  background: #ebebeb;
+  color: black;
+  -webkit-box-shadow: inset -4px 0px 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset -4px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0 10px 0;
+}
+
+.header__title {
+  color: white;
+}
+
+.apple__img {
+  width: 5%;
+}
+
+.header__subtitle {
+  color: white;
+}
+
+.swiper__img {
+  width: 100%;
+  display: block;
+}
+
+.swiper__img-mob {
+  display: none;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__items {
+  text-align: center;
+}
+
+.card__name {
+  padding: 50px 0 0 0;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.card {
+  margin: 15px;
+  padding: 55px;
+  border: 1px solid #cccccc;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover {
+  border: 4px solid #b1d9fc;
+  background: #f7f7f7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 375px) {
+  .header__subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .header__subtitle {
+    font-size: 14px;
+  }
+
+  .header__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .apple__img {
+    width: 15%;
+  }
+}
+@media (max-width: 768px) {
+  .swiper__img-mob {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper__img {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .no-active {
+    display: none;
+  }
+}
