@@ -4,14 +4,14 @@
 }
 
 html, body {
-  font-size: 16px;
+  font-size: 18px;
   color: #000000;
   font-family: "Roboto", sans-serif;
-  background: #e8e8e8;
+  background: #f2f2f2;
 }
 
 strong {
-  color: teal;
+  color: red;
 }
 
 img {
@@ -72,14 +72,59 @@ img {
 
 .header__title {
   color: white;
+  -webkit-animation: anim 2s ease-in;
+          animation: anim 2s ease-in;
 }
 
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: translateX(45%);
+            transform: translateX(45%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: translateX(45%);
+            transform: translateX(45%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@-webkit-keyframes anim2 {
+  from {
+    -webkit-transform: translateX(-45%);
+            transform: translateX(-45%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes anim2 {
+  from {
+    -webkit-transform: translateX(-45%);
+            transform: translateX(-45%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
 .apple__img {
   width: 5%;
 }
 
 .header__subtitle {
   color: white;
+  -webkit-animation: anim2 2s ease-in;
+          animation: anim2 2s ease-in;
 }
 
 .swiper__img {
@@ -102,6 +147,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 50px 0;
 }
 
 .card__items {
@@ -129,8 +175,9 @@ img {
 
 .card {
   margin: 15px;
-  padding: 55px;
-  border: 1px solid #cccccc;
+  padding: 55px 55px 20px 55px;
+  background: #fefefe;
+  border: 1px solid #9e9e9e;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -140,6 +187,62 @@ img {
   background: #f7f7f7;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-box-shadow: -4px 3px 10px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: -4px 3px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+.card__shopping {
+  padding: 10px 0 0 0;
+}
+
+.shopping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  background: black;
+  color: white;
+}
+
+.shopping__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.shopping__title:hover {
+  text-decoration: underline;
+}
+
+.card__title {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.card__subtitle {
+  font-style: italic;
+}
+
+.far {
+  padding: 20px 20px 20px 35px;
+  background: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.far:hover {
+  padding: 20px 20px 20px 60px;
+  background: #e8e8e8;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+hr {
+  border: 1px solid black;
+  margin: 20px 0;
 }
 
 @media (max-width: 375px) {
@@ -175,5 +278,15 @@ img {
 @media (max-width: 1024px) {
   .no-active {
     display: none;
+  }
+
+  .header__title {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .header__subtitle {
+    -webkit-animation: none;
+            animation: none;
   }
 }
