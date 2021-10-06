@@ -10,29 +10,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-
     fnmOCqbtlwIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>OnStore</title>
 </head>
 
 <body>
+    <div class="bg"></div>
+    <div class="modal__content">
+        <div class="modal __container">
+            <div class="modal__block">
+                <h1 class="modal__title">Корзина</h1>
+
+                <div id="cart__content">
+                    <h2 class="null__busket">Корзина Пуста!</h2>
+                </div>
+                <div class="buttons">
+                    <button id="checkout" class="checkout">Посмотреть <br> товары в корзине</button>
+                    <button id="clear__cart" class="checkout">Очистить корзину</button>
+                    <div id="status"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <header class="header">
         <div class="header__name">
             <h1 class="header__title">OnStore</h1>
-            <img src="/assets/img/Apple.jpg" alt="" class="apple__img">
+            <img src="./assets/img/Apple.jpg" alt="" class="apple__img">
             <h2 class="header__subtitle">Premium</h2>
+
+            <div class="burger burger--active">
+                <span>
+                    <div class="menu">
+                        <a id="nav1" href="#" class="nav__link nav--active">Главная</a>
+                        <a id="nav2" href="#" class="nav__link nav--active">Товары</a>
+                        <a id="nav3" href="#" class="nav__link nav--active">О Нас</a>
+                        <a id="btn" class="nav__link">Корзина
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </span>
+            </div>
+            <a class="back_to_top" title="Наверх">↑</a>
         </div>
         <div class="header__navigation no-active">
-            <a href="#" class="nav__link">Главная</a>
-            <a href="#" class="nav__link">Товары</a>
-            <a href="#" class="nav__link">О Нас</a>
-            <a href="#" class="nav__link">Корзина
+            <a id="nav-1" href="#" class="nav__link">Главная</a>
+            <a id="nav-2" href="#" class="nav__link">Товары</a>
+            <a id="nav-3" href="#" class="nav__link">О Нас</a>
+            <a id="btn" class="nav__link">Корзина
                 <i class="fas fa-shopping-cart"></i>
             </a>
+
         </div>
         <div class="header__banner">
             <a href="#" class="header__swiper">
-                <img class="swiper__img-mob" src="/assets/img/swiper__img.jpg" alt="">
-                <img class="swiper__img" src="/assets/img/swiper__img pc.jpg" alt="">
+                <img class="swiper__img-mob" src="./assets/img/swiper__img.jpg" alt="">
+                <img class="swiper__img" src="./assets/img/swiper__img pc.jpg" alt="">
             </a>
         </div>
     </header>
@@ -42,105 +75,98 @@
                 <h1 class="card__name">iPhone</h1>
                 <div class="cards">
                     <div class="card">
-                        <img src="/assets/img/iPhone/iPhone13 PRO MAX.jpg" alt="">
+                        <img src="./assets/img/iPhone/iPhone13 PRO MAX.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPhone 13 Pro Max</div>
-                        <div class="card__subtitle">Цена: <strong>159 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPhone 13 Pro Max</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>159 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="1">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/assets/img/iPhone/iPhone 13.jpg" alt="">
+                        <img src="./assets/img/iPhone/iPhone 13.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPhone 13</div>
-                        <div class="card__subtitle">Цена: <strong>89 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPhone 13</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>89 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="2">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/assets/img/iPhone/iPhone 12 Pro Max.jpg" alt="">
+                        <img src="./assets/img/iPhone/iPhone 12 Pro Max.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPhone 12 Pro Max</div>
-                        <div class="card__subtitle">Цена: <strong>109 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPhone 12 Pro Max</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>109 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="3">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/assets/img/iPhone/iPhone 12 mini.jpg" alt="">
+                        <img src="./assets/img/iPhone/iPhone 12 mini.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPhone 12 mini</div>
-                        <div class="card__subtitle">Цена: <strong>69 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPhone 12 Mini</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>69 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="4">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/assets/img/iPhone/iPhone 11.jpg" alt="">
+                        <img src="./assets/img/iPhone/iPhone 11.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPhone 11</div>
-                        <div class="card__subtitle">Цена: <strong>64 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPhone 11</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>64 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="5">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
+
             <div class="card__items">
                 <h1 class="card__name">iPad</h1>
                 <div class="cards">
                     <div class="card">
-                        <img src="/assets/img/iPad/iPad Pro.jpg" alt="">
+                        <img src="./assets/img/iPad/iPad Pro.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPad Pro</div>
-                        <div class="card__subtitle">Цена: <strong>113 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPad Pro</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>113 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="6">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/assets/img/iPad/iPad.jpg" alt="">
+                        <img src="./assets/img/iPad/iPad.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPad</div>
-                        <div class="card__subtitle">Цена: <strong>56 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPad</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>56 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="7">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/assets/img/iPad/iPad Air.jpg" alt="">
+                        <img src="./assets/img/iPad/iPad Air.jpg" alt="">
                         <hr>
-                        <div class="card__title">iPad Air</div>
-                        <div class="card__subtitle">Цена: <strong>62 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">iPad Air</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>62 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="8">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                 </div>
@@ -150,33 +176,49 @@
                 <h1 class="card__name">Watch</h1>
                 <div class="cards">
                     <div class="card">
-                        <img src="/assets/img/Watch/Apple Watch Series 6.jpg" alt="">
+                        <img src="./assets/img/Watch/Apple Watch Series 6.jpg" alt="">
                         <hr>
-                        <div class="card__title">Apple <br> Watch Series 6</div>
-                        <div class="card__subtitle">Цена: <strong>36 990 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">Apple <br> Watch Series 6</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>36 990
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="9">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/assets/img/Watch/Apple Watch SE.jpg" alt="">
+                        <img src="./assets/img/Watch/Apple Watch SE.jpg" alt="">
                         <hr>
-                        <div class="card__title">Apple <br> Watch SE</div>
-                        <div class="card__subtitle">Цена: <strong>27 490 ₽</strong></div>
-                        <div class="card__shopping">
-                            <a href="#" class="shopping">
-                                <h2 class="shopping__title">Добавить <br> в корзину</h2>
-                                <i class="fas fa-shopping-cart far"></i>
-                            </a>
+                        <div class="item__box">
+                            <div class="item__title">Apple <br> Watch SE</div>
+                            <div class="card__subtitle">Цена:<span class="item__price"><strong>27 490
+                                    </strong></span>₽</div>
+                            <button class="add__item" data-id="10">Добавить <br> в корзину</button>
+                            <i id="btn" class="fas fa-shopping-cart fars"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </main>
+    <footer class="footer">
+        <div class="faq">
+            <div class="faq__city">
+                <h2 class="faq__title">г. Кемерово пр. Ленина 1</h2>
+                <p class="faq__tel">Тел. +7-(999)-777-99-88</p>
+                <p class="faq__subtitle">Работаем без обеда и выходных с 8:00 до 18:00</p>
+            </div>
+            <div class="faq__info">
+                <h2>Разработал сайт <br> <a class="info__title" href="https://github.com/Shk-dev">Andrey Iglovsky</a>
+                </h2>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/burger.js"></script>
+    <script src="./assets/js/myModal.js"></script>
+    <script src="./assets/js/shopCart.js"></script>
+    <script src="./assets/js/navigation.js"></script>
 </body>
 
 </html>
